@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+<head>
 
 		<!-- Basic Page Needs
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<meta charset="utf-8">
-		<title>Your page title here :)</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Catalogue - About us - Sameyeh</title>
 		<meta name="description" content="">
 		<meta name="author" content="">
 
@@ -15,23 +16,20 @@
 
 		<!-- FONT
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-		<link href='//fonts.googleapis.com/css?family=Corben:400,700' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=Montserrat+Alternates:400,700' rel='stylesheet' type='text/css'>
+		
 		<!-- CSS
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link href="css/reset.css" rel="stylesheet" type="text/css"/>
-
-		<link href="css/960_12_col.css" rel="stylesheet" type="text/css"/>		
-		<link href="libs/jcarousel/basic/jcarousel.basic.css" rel="stylesheet" type="text/css"/>
+		
+		<link href="css/normalize.min.css" rel="stylesheet" type="text/css"/>
+		
+		<link href="css/960_12_col.css" rel="stylesheet" type="text/css"/>				
 		<link href="style.css" rel="stylesheet" type="text/css"/>
 		<!-- Favicon
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<!--<link rel="icon" type="image/png" href="images/favicon.png">-->
 		<script src="libs/modernizr/modernizr.js" type="text/javascript"></script>
 		<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-		<script src="libs/jcarousel/jquery.jcarousel.min.js" type="text/javascript"></script>		
-		<script src="libs/jcarousel/basic/jcarousel.basic.js" type="text/javascript"></script>
+		
 	</head>
 	<body>
 
@@ -58,10 +56,10 @@
 					<nav id="primary_nav_wrap">
 						<ul>
 							<li class="current-menu-item">
-								<a href="#">Home</a>
+								<a href="index.html">Home</a>
 							</li>
 							<li>
-								<a href="#">Products</a>
+								<a href="product.html">Products</a>
 								<ul class="submenu">
 									<li>
 										<a href="#">Anatolian</a>
@@ -104,48 +102,76 @@
 							</li>
 							<li>
 								<a href="#">About us</a>
+								<ul class="submenu">
+									<li>
+										<a href="about-us-introduction.html">Introduction</a>
+									</li>
+									<li>
+										<a href="about-us-catalog.html">Catalog</a>
+									</li>
+								</ul>
 							</li>
 							<li>
-								<a href="#">Contact</a>
+								<a href="contact-us.html">Contact</a>
+							</li>
+							<li>
+								<a href="customize.html">Customize</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</div>
-		<div id="main-content">
-			<div class="container_12 ">
-				<div class="clearfix">
-					<h1>Oriental Rugs and Carpets</h1>
-					<div class="jcarousel-wrapper">
-						<div class="jcarousel">
-							<ul>
-								<li>
-									<img src="images/banner.png" alt=""/>
-								</li>
-								<li>
-									<img src="images/banner.png" alt=""/>
-								</li>
-								<li>
-									<img src="images/banner.png" alt=""/>
-								</li>
-								<li>
-									<img src="images/banner.png" alt=""/>
-								</li>
-								<li>
-									<img src="images/banner.png" alt=""/>
-								</li>
-							</ul>
-						</div>
-
-						<a href="#" class="jcarousel-control-prev"></a>
-						<a href="#" class="jcarousel-control-next"></a>
-
-						<p class="jcarousel-pagination">
-
+		<div id="main-content" class="contact-us">
+			<div class="container_12 clearfix">
+				
+					<div class="contact-info grid_6">
+						<h2>
+							Keep in touch 
+						</h2>
+						<p>
+							Mobile Ph: (65) 9735 3572 <br>
+							Office Tel/Fax: (65) 63397021 <br>
+							E-mail: sameyeh@sameyeh.com.sg <br>
+							Skype: sameyeh <br>
+							Address: 28 Sin Ming Lane #08/146,<br>
+							Midview City, Singapore 573972 <br>
 						</p>
 					</div>
-
+					<div class=" form-contact grid_6">
+						<h2>
+							Custommer Detail 
+						</h2>
+						<form>
+							<p>
+								<label>Name: </label>
+								<input type="text">
+							</p>
+							<p>
+								<label>Phone: </label>
+								<input type="text">
+							</p>
+							<p>
+								<label>Email: </label>
+								<input type="text">
+							</p>
+							<p>
+								<label>Company: </label>
+								<input type="text">
+							</p>
+							<p>
+								<label>Country: </label>
+								<input type="text">
+							</p>
+							<p>
+								<label>Description: </label>
+								<input type="text">
+							</p>
+							<p>
+								<button>Submit</button>
+							</p>
+						</form>
+					
 				</div>
 			</div>
 		</div>
@@ -175,30 +201,30 @@
 								Skype:  sameyeh<br />
 								Address: 28 Sin Ming Lane #08/146,<br />
 								Midview City, Singapore 573972</p>
+							</div>
 						</div>
-					</div>
-					<div class="links">
-						<h3 class="title">
-							<a href="#">Login</a>/<a href="#">Sign up</a>
-						</h3>
-						<div class="content">
-							<img src="images/footer-logo.png" alt="logo"/>
-						</div>
+						<div class="links">
+							<h3 class="title">
+								<a href="#">Login</a>/<a href="#">Sign up</a>
+							</h3>
+							<div class="content">
+								<img src="images/footer-logo.png" alt="logo"/>
+							</div>
 
+						</div>
 					</div>
+				</div>
+
+			</footer>
+			<div class="copyright">
+				<div class="container_12">
+					<p class="grid_12">&copy;2015 SH. Sameyeh Pte Ltd. All rights reserved.   </p>
 				</div>
 			</div>
 
-		</footer>
-		<div class="copyright">
-			<div class="container_12">
-				<p class="grid_12">&copy;2015 SH. Sameyeh Pte Ltd. All rights reserved.   </p>
-			</div>
-		</div>
 
-
-		<script src="js/custom.js" type="text/javascript"></script>
+			<script src="js/custom.js" type="text/javascript"></script>
 		<!-- End Document
-		  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	</body>
-</html>
+	</html>

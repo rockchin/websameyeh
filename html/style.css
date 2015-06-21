@@ -1,34 +1,39 @@
 @font-face {
-    font-family: 'corbel';
-    src: url(fonts/corbel.ttf);
+	font-family: 'corbel';
+	src: url(fonts/corbel.ttf);
 }
 @font-face {
-    font-family: 'corbelb';
+	font-family: 'corbelb';
 	font-style: bold;
-    src: url(fonts/corbelb.ttf);
+	src: url(fonts/corbelb.ttf);
 }
 @font-face {
-    font-family: 'corbeli';
+	font-family: 'corbeli';
 	font-style: italic;
-    src: url(fonts/corbeli.ttf);
+	src: url(fonts/corbeli.ttf);
 }
 @font-face {
-    font-family: 'corbeli';
+	font-family: 'corbeli';
 	font-style: italic;
-    src: url(fonts/corbeli.ttf);
+	src: url(fonts/corbeli.ttf);
 }
 @font-face {
-    font-family: 'msmincho';	
-    src: url(fonts/msmincho.ttc);
+	font-family: 'msmincho';	
+	src: url(fonts/msmincho.ttc);
 }
 @font-face {
-    font-family: 'vrinda';	
-    src: url(fonts/vrinda.ttf);
+	font-family: 'vrinda';	
+	src: url(fonts/vrinda.ttf);
 }
 @font-face {
-    font-family: 'vrindab';
+	font-family: 'vrindab';
 	font-style: bold;
-    src: url(fonts/vrindab.ttf);
+	src: url(fonts/vrindab.ttf);
+}
+@font-face{
+	font-family: 'HLButLong';
+	font-style: normal;
+	src: url(fonts/hlblong.ttf);
 }
 /*-------------------------------------------------*/
 /*common*/
@@ -153,9 +158,9 @@ nav {
 
 #primary_nav_wrap ul ul li
 {
-	  float: left;
-	  width: 131px;
-	  padding: 0 15px 0 18px;
+	float: left;
+	width: 131px;
+	padding: 0 15px 0 18px;
 }
 
 #primary_nav_wrap ul ul a
@@ -258,8 +263,9 @@ footer .links .content{
 	padding: 18px;
 	color: #fff;
 }
+
 /*-------------------------------------------------*/
-/* front-page content*/
+/* Home page*/
 /*-------------------------------------------------*/
 h1{
 	font-size: 38.91px;
@@ -279,6 +285,184 @@ h1{
 .jcarousel-control-next{
 	background: url('images/btn-next.png') no-repeat;
 }
+.film_roll_child {
+	
+}
+.film_roll_child.active{
+	margin: 0 32px;
+}
+.film_roll_child img{
+	width: 246px;
+	height: 144px;
+}
+.film_roll_child.active img{
+	width: 399px;
+	height: 233px;
+}
+/*-------------------------------------------------*/
+/* About us page*/
+/*-------------------------------------------------*/
+.about-us{
+
+}
+.about-us.introduction{}
+.about-us.introduction{
+	color: #fff;
+	font-family: Century Gothic, sans-serif;
+	font-size:15px;
+	text-align: justify;
+}
+.about-us.introduction .introduction-content{
+	margin-bottom: 50px;
+	padding-left: 25px;
+}
+.about-us.introduction .introduction-content *{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	position:relative;
+}
+
+/*-------------------------------------------------*/
+/* About us - Introduction page*/
+/*-------------------------------------------------*/
+.about-us.introduction .introduction-content .container{
+	overflow:hidden;
+	height: 674px;
+	width: 960px;
+}
+.about-us.introduction .introduction-content .shaped{
+	height: 674px;
+	width: 496px;
+	float: right;
+	background: transparent url(images/about-us-introduction-img.png) right bottom no-repeat;
+	background-size: auto;
+	-webkit-shape-outside: polygon(80% 0, 100% 0, 100% 100%, 30% 100%);
+	shape-outside: polygon(99% 0, 100% 0, 100% 100%, -20% 100%);
+	-webkit-clip-path: polygon(99% 0, 100% 0, 100% 100%, -20% 100%);
+	-webkit-shape-margin: 10px;
+	/* -webkit-shape-outside: url(mask.png) top left; */
+}
+
+.about-us.introduction .introduction-content .content p:first-child::first-letter{ 
+	font-family: 'HLButLong', tahoma;
+	font-size: 30px;
+}
+/*-------------------------------------------------*/
+/* About us - catalogue page*/
+/*-------------------------------------------------*/
+.about-us.catalogue{
+	margin-bottom: 40px;
+}
+.about-us.catalogue .listitem{
+	border-right: 1px solid #313131;
+}
+.about-us.catalogue .listitem ul li{
+	float: left;
+	list-style: none;
+	width: 163px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+}
+.about-us.catalogue .listitem ul li div.img{
+	background-color: #656565;
+	height: 163px;
+	width: 163px;
+}
+.about-us.catalogue .form-order form p label,
+.about-us.catalogue .listitem ul li p{
+	font-family: Vrinda, tahoma;
+	font-size: 20px;
+	color: #c8c8c8;
+	text-transform: uppercase;
+}
+.about-us.catalogue .form-order{}
+.about-us.catalogue .form-order h2{
+	font-family: Vrinda, tahoma;
+	font-size: 27px;
+	color: #837752;
+}
+.about-us.catalogue .form-order p label{
+	margin-right: 3px;  
+	width: 200px;
+	display: inline-block;
+}
+.about-us.catalogue .form-order p input[type='checkbox']{	
+	display: inline-block;
+}
+.about-us.catalogue .form-order p button{
+	color:#837752;
+	font-size: 25px;
+	background: url('images/btn-submit.png') no-repeat;
+	width: 143px;
+	height: 48px;
+	border: none;
+	text-align: center;
+	float:right;
+	font-family: Vrinda, tahoma;
+}
+/*-------------------------------------------------*/
+/* Customize page*/
+/*-------------------------------------------------*/
+.customize form p{
+	font-family: Vrinda, tahoma;
+	color: #c8c8c8;
+}
+.customize form p label{
+	width: 220px;
+	display: inline-block;
+	color:#837752;
+	font-size: 20px;
+}
+.customize form p input[type="text"]{
+	width: 470px;
+	height: 25px;
+	display: inline-block;
+}
+.customize form p button{
+	color:#837752;
+	font-size: 22px;
+	background: url('images/btn-submit.png') no-repeat;
+	width: 143px;
+	height: 48px;
+	border: none;
+	text-align: center;
+	margin-left:383px;
+	/*padding-left: 163px;*/
+}
+/*-------------------------------------------------*/
+/* Contact Us page*/
+/*-------------------------------------------------*/
+.contact-us{
+	font-family: Vrinda, tahoma;
+	color: #c2c1c1;
+
+}
+.contact-us h2{	 
+	font-size: 20px;
+}
+.contact-us .contact-info p{
+	font-size: 15px;
+	font-family: Tunga;	
+}
+.contact-us .form-contact p label{
+	font-family: Vrinda, tahoma;
+	font-size: 20px;
+	color: #837752;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
