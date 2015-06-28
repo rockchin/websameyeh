@@ -38,6 +38,10 @@
 /*-------------------------------------------------*/
 /*common*/
 /*-------------------------------------------------*/
+/** {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}*/
 body{
 	background-color: #151515;	
 	font-family: tahoma, arial, sans-serif;
@@ -325,26 +329,46 @@ h1{
 	width: 823px;
 	margin: 0 auto;
 }
-.jcarousel-control-prev{
-	background: url('images/btn-prev.png') no-repeat;
+/*Slider*/
+.slick-slider {
+	margin: 30px auto 50px;
 }
-.jcarousel-control-next{
-	background: url('images/btn-next.png') no-repeat;
+
+.top-slider .slick-slide {
+	height: auto;
+	width: 247px;
+	position: relative; 
+	margin: 0 15px;
 }
-.film_roll_child {
-	
+.top-slider .slick-slide p{
+	color: #fff;
+	font-size: 13px;
+	line-height: 1;
+	text-align: center;
+	display: none;
 }
-.film_roll_child.active{
-	margin: 0 32px;
-}
-.film_roll_child img{
-	width: 246px;
+.top-slider .slick-slide img{	
+	padding-top: 45px;
 	height: 144px;
+	width: 247px;
 }
-.film_roll_child.active img{
+.top-slider .slick-slide.slick-active{
+	opacity: 0.5;
+}
+.top-slider .slick-slide.slick-active.slick-center{	
+	opacity: 1;
 	width: 399px;
-	height: 233px;
 }
+.top-slider .slick-slide.slick-active.slick-center img{
+	width: 399px;
+	height: 234px;
+	padding-top: 0;
+}
+.top-slider .slick-slide.slick-active.slick-center p{
+	display: block;
+}
+
+
 /*-------------------------------------------------*/
 /* About us page*/
 /*-------------------------------------------------*/
