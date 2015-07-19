@@ -115,7 +115,8 @@ form#search input{
 #nav-logo{
 	background-image: url(images/bg_top.jpg);
 	background-repeat: repeat-x;
-	height: 100px;
+	
+	border-bottom: 1px solid #2d2d2d;
 }
 
 nav {
@@ -321,9 +322,9 @@ h1{
 	font-size: 38.91px;
 	color: #f4f4f4;
 	font-family: 'adobemyungjostd-medium', sans-serif;
-	text-align: center;
-	margin-top: 73px;
-	margin-bottom: 71px;
+	text-align: center;	
+	line-height: 69px;
+	border-bottom: 1px solid #2d2d2d;
 }
 .content .grid_12{
 	width: 823px;
@@ -331,44 +332,68 @@ h1{
 }
 /*Slider*/
 .slick-slider {
-	margin: 30px auto 50px;
+	margin: 0 auto;
+}
+#top-slider{
+	margin-top: 221px;
 }
 
-.top-slider .slick-slide {
-	height: auto;
-	width: 247px;
-	position: relative; 
-	margin: 0 15px;
+/*.slider-for*/
+#top-slider .slider-for .slick-slide img{
+	width: 399px;
+	height: 234px;
+	margin: 0 auto;
+	margin-bottom: 117px;
 }
-.top-slider .slick-slide p{
+#top-slider .slider-for{
+	width: 528px;
+	height: 407px;
+	margin: 0 auto;
+	z-index: 2;
+}
+#top-slider .slider-for .slick-slide p{
+	font-family: Microsoft Uighur, sans-serif;
+	color: #fff;
+	font-size: 25px;	
+	text-align: center;
+}
+.slick-prev {
+  left: 70px;
+  top: 117px;
+}
+.slick-next {
+  right: 70px;
+  top: 117px;
+}
+
+/*.slider-for*/
+#top-slider .slider-nav{
+	top: -363px;
+	z-index: 1;
+}
+#top-slider .slider-nav .slick-slide {		
+	position: relative; 
+}
+#top-slider .slider-nav .slick-slide div{
+	
+}
+#top-slider .slider-nav .slick-slide p{
 	color: #fff;
 	font-size: 13px;
 	line-height: 1;
-	text-align: center;
+	text-align: center;	
 	display: none;
 }
-.top-slider .slick-slide img{	
-	padding-top: 45px;
-	height: 144px;
-	width: 247px;
-}
-.top-slider .slick-slide.slick-active{
-	opacity: 0.5;
-}
-.top-slider .slick-slide.slick-active.slick-center{	
-	opacity: 1;
-	width: 399px;
-}
-.top-slider .slick-slide.slick-active.slick-center img{
-	width: 399px;
-	height: 234px;
-	padding-top: 0;
-}
-.top-slider .slick-slide.slick-active.slick-center p{
+#top-slider .slider-nav .slick-slide img{		
+	height: 145px;
+	width: 248px;
 	display: block;
+	margin: 0 auto;
 }
-
-
+#top-slider .slider-nav .slick-slide.slick-active.slick-center div{
+	width: 528px;
+	
+}
 /*-------------------------------------------------*/
 /* About us page*/
 /*-------------------------------------------------*/
