@@ -114,9 +114,8 @@ form#search input{
 /*-------------------------------------------------*/
 #nav-logo{
 	background-image: url(images/bg_top.jpg);
-	background-repeat: repeat-x;
-	
-	border-bottom: 1px solid #2d2d2d;
+	background-repeat: repeat-x;	
+	/*border-bottom: 1px solid #2d2d2d;*/
 }
 
 nav {
