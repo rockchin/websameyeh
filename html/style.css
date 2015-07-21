@@ -336,7 +336,14 @@ h1{
 #top-slider{
 	margin-top: 221px;
 }
-
+/*.slick-prev {
+  left: 70px;
+  top: 117px;
+}
+.slick-next {
+  right: 70px;
+  top: 117px;
+}*/
 /*.slider-for*/
 #top-slider .slider-for .slick-slide img{
 	width: 399px;
@@ -356,14 +363,7 @@ h1{
 	font-size: 25px;	
 	text-align: center;
 }
-.slick-prev {
-  left: 70px;
-  top: 117px;
-}
-.slick-next {
-  right: 70px;
-  top: 117px;
-}
+
 
 /*.slider-for*/
 #top-slider .slider-nav{
@@ -390,9 +390,40 @@ h1{
 	margin: 0 auto;
 }
 #top-slider .slider-nav .slick-slide.slick-active.slick-center div{
-	width: 528px;
-	
+	width: 528px;	
 }
+/*.center*/
+#top-slider .center .slick-slide{
+	width: 216px;	
+	height: 407px;
+}
+#top-slider .center .slick-slide img{
+	height: 145px;
+	width: 248px;
+	display: block;
+	margin: 0 auto;
+}
+#top-slider .center .slick-slide p{
+	display: none;
+}
+#top-slider .center .slick-slide.slick-active.slick-center{
+	width: 528px;
+	height: 407px;		
+}
+#top-slider .center .slick-slide.slick-active.slick-center img{
+	width: 399px;
+	height: 234px;
+	margin: 0 auto;
+	margin-bottom: 117px;
+}
+#top-slider .center .slick-slide.slick-active.slick-center p{
+	font-family: Microsoft Uighur, sans-serif;
+	color: #fff;
+	font-size: 25px;	
+	text-align: center;
+	display: block;
+}
+
 /*-------------------------------------------------*/
 /* About us page*/
 /*-------------------------------------------------*/
